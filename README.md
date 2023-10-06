@@ -1,6 +1,12 @@
 # Changing variables of plus distributions
 We present here a Mathematica code to change variables of plus distributions of the form
-
+<script type="text/x-mathjax-config">
+MathJax.Hub.Register.StartupHook('TeX Jax Ready', function () {
+  MathJax.InputJax.TeX.prefilterHooks.Add(function (data) {
+    data.math = data.math.replace(/^% <!\[CDATA\[/, '').replace(/%\]\]>$/, '');
+  });
+});
+</script>
 $$\left(\frac{\log^p(a-x)}{a-x}\right)_+$$
 
 or
